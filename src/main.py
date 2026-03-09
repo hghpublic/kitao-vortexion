@@ -23,7 +23,7 @@ class App:
             capture_scale=APP_CAPTURE_SCALE
         )
 
-        px.colors.from_list(PALETTE)
+        px.colors[:] = PALETTE
         px.images[0].load(0, 0, "assets/" + APP_GFX_FILE)
         px.load("assets/" + SOUNDS_RES_FILE, exclude_images=True,
                 exclude_tilemaps=True, exclude_musics=True)
